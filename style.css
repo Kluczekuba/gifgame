@@ -142,13 +142,14 @@ strong {
 
 @media (max-width: 760px) and (orientation: portrait) {
   body {
-    padding: 7px;
+    padding: 4px;
   }
 
   .game-shell {
-    width: min(calc(100vw - 14px), calc((100dvh - 14px) * 9 / 16));
-    height: auto;
-    aspect-ratio: 9 / 16;
+    width: min(calc(100vw - 8px), calc((100dvh - 8px) * 10 / 16));
+    height: min(calc(100dvh - 8px), calc((100vw - 8px) * 16 / 10));
+    aspect-ratio: 10 / 16;
+    border-radius: 18px;
   }
 
   .screen {

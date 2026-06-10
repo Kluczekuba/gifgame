@@ -96,11 +96,11 @@ function getMachineBox() {
   const portrait = view.height / view.width > 1.12;
   const road = getRoad();
   const width = portrait
-    ? clamp(view.width * 0.68, 220, 315)
+    ? clamp(view.width * 0.54, 190, 280)
     : clamp(view.width * 0.34, 270, 395);
   const height = width * MACHINE_ASPECT;
   const x = portrait ? view.width * 0.06 : view.width * 0.07;
-  const bottom = road.top + road.height * (portrait ? 0.43 : 0.54);
+  const bottom = road.top + road.height * (portrait ? 0.48 : 0.54);
   return { x, y: bottom - height, width, height, bottom };
 }
 
