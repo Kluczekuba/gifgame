@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#1a1b1d">
+    <title>MPA RETRO Game</title>
+    <meta name="description" content="MPA RETRO Game - arcade road repair game">
+    <meta property="og:title" content="MPA RETRO Game">
+    <meta property="og:description" content="Zagraj w retro grę MADROG na telefonie">
+    <link rel="stylesheet" href="style.css?v=portrait-1">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="MADROG Road Repair">
+      <canvas id="gameCanvas" width="960" height="540" aria-label="MADROG Road Repair"></canvas>
+
+      <section id="startScreen" class="screen is-active" aria-labelledby="startTitle">
+        <div class="panel">
+          <p class="eyebrow">MADROG arcade</p>
+          <h1 id="startTitle">MADROG Road Repair</h1>
+          <p class="lead">Łataj ubytki w drodze</p>
+          <p>Kliknij, dotknij lub naciśnij spację, aby naprawić nawierzchnię</p>
+          <button id="startButton" class="primary-button" type="button">Start</button>
+        </div>
+      </section>
+
+      <section id="endScreen" class="screen" aria-labelledby="endTitle">
+        <div class="panel">
+          <p class="eyebrow">Wynik przejazdu</p>
+          <h2 id="endTitle">Koniec gry</h2>
+          <p>Naprawione ubytki: <strong id="finalRepairs">0</strong></p>
+          <p>Najlepszy wynik: <strong id="finalBest">0</strong></p>
+          <button id="restartButton" class="primary-button" type="button">Zagraj ponownie</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="game.js" defer></script>
+  </body>
+</html>
